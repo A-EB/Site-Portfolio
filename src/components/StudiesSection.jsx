@@ -2,7 +2,7 @@ import { studies } from '../data/studies';
 import { useLanguage } from '../i18n.jsx';
 
 function StudiesSection() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <section id="studies" className="section alt">
@@ -19,7 +19,7 @@ function StudiesSection() {
                   {item.institution} • {item.period}
                 </p>
                 <ul className="timeline-details">
-                  {item.details.map((detail, idx) => (
+                  {item.details[lang].map((detail, idx) => (
                     <li key={idx}>{detail}</li>
                   ))}
                 </ul>
