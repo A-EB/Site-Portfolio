@@ -2,7 +2,7 @@ import { projects } from '../data/projects';
 import { useLanguage } from '../i18n.jsx';
 
 function ProjectsSection() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <section id="projects" className="section">
@@ -13,10 +13,10 @@ function ProjectsSection() {
           {projects.map((project) => (
             <article key={project.id} className="project-card">
               <div className="project-header">
-                <h3 className="project-title">{project.title}</h3>
+                <h3 className="project-title">{project.title[lang]}</h3>
                 <span className="project-period">{project.period}</span>
               </div>
-              <p className="project-description">{project.description}</p>
+              <p className="project-description">{project.description[lang]}</p>
               <div className="project-tags">
                 {project.stack.map((tag) => (
                   <span key={tag} className="tag">
