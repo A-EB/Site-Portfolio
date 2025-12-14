@@ -103,12 +103,24 @@
 
 @media (max-width: 768px) {
   .cert-slider {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    /* Allow wrapping */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cert-viewport {
+    width: 100%;
+    order: 1;
+    /* Content first */
   }
 
   .cert-nav {
-    align-self: center;
+    order: 2;
+    /* Arrows second */
+    margin-top: 0.5rem;
   }
 
   .cert-image {
