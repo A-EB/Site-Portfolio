@@ -113,6 +113,8 @@
 
   .cert-viewport {
     width: 100%;
+    flex: 0 0 100%;
+    /* Force full width, overriding desktop flex:1 */
     order: 1;
     /* Content first */
     margin-bottom: 1rem;
