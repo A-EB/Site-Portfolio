@@ -1,10 +1,10 @@
 :root {
-  --bg: #050816;
-  --bg-alt: #080b24;
+  --bg: #0f172a;
+  --bg-alt: #1e293b;
   --fg: #e5e7eb;
   --muted: #9ca3af;
   --accent: #38bdf8;
-  --border: #1f2933;
+  --border: #334155;
 }
 
 *,
@@ -28,7 +28,7 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text',
     'Inter', sans-serif;
-  background: radial-gradient(circle at top, #111827 0, #020617 60%);
+  background: radial-gradient(circle at top, #1e293b 0, #0f172a 60%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

@@ -17,7 +17,7 @@
 
 .project-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 20px 35px rgba(2, 6, 23, 0.6);
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.6);
 }
 
 .project-header {

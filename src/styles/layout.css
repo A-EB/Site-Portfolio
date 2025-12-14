@@ -13,9 +13,9 @@
   background:
     radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 55%),
     radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.05), transparent 55%),
-    rgba(8, 11, 36, 0.98);
+    rgba(15, 23, 42, 0.95);
   border: 1px solid rgba(148, 163, 184, 0.3);
-  box-shadow: 0 22px 45px rgba(2, 6, 23, 0.85);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.85);
   overflow: hidden;
 }
 
