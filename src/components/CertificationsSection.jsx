@@ -57,20 +57,6 @@ function CertificationsSection() {
                 <div className="cert-text">
                   <h3 className="cert-name">{cert.title}</h3>
                   <div className="cert-meta">
-                    <span className="cert-issuer">{cert.issuer}</span>
-                    {cert.date && (
-                      <>
-                        <span className="cert-dot">•</span>
-                        <span className="cert-date">{cert.date}</span>
-                      </>
-                    )}
-                    {cert.type && (
-                      <>
-                        <span className="cert-dot">•</span>
-                        <span className="cert-type">{cert.type}</span>
-                      </>
-                    )}
-                    <span className="cert-dot">•</span>
                     <span className="cert-index">
                       {current + 1}/{total}
                     </span>
@@ -88,16 +74,7 @@ function CertificationsSection() {
                 </div>
               )}
 
-              {cert.link && (
-                <a
-                  href={cert.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="cert-link"
-                >
-                  {t('certs.view')}
-                </a>
-              )}
+
             </article>
           </div>
 

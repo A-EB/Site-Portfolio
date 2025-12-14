@@ -35,9 +35,14 @@
   object-fit: contain;
 }
 
-.cert-link {
-  margin-top: 0.9rem;
-  align-self: flex-start;
+.cert-text {
+  text-align: center;
+}
+
+.cert-meta {
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .cert-nav {

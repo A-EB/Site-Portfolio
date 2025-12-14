@@ -19,7 +19,7 @@ export const projects = [
     description:
       'High-performance concurrent HashMap implementation with different synchronization strategies and benchmarking.',
     links: {
-      github: '#', // add your repo URL here when you publish it
+      github: 'https://github.com/A-EB/PSCR-TME/tree/master/TME4', // add your repo URL here when you publish it
       demo: null,
     },
   },
