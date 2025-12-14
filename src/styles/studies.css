@@ -12,11 +12,9 @@
   top: 0.4rem;
   bottom: 0.4rem;
   width: 2px;
-  background: linear-gradient(
-    to bottom,
-    rgba(56, 189, 248, 0.7),
-    rgba(148, 163, 184, 0.3)
-  );
+  background: linear-gradient(to bottom,
+      rgba(148, 163, 184, 0.3),
+      rgba(56, 189, 248, 0.7));
   opacity: 0.85;
 }
 
@@ -29,6 +27,7 @@
   margin-bottom: 0;
 }
 
+/* Timeline Dot: Default OFF (Grey/Dim) */
 .timeline-dot {
   position: absolute;
   left: 0.45rem;
@@ -37,8 +36,12 @@
   height: 0.8rem;
   border-radius: 999px;
   background: var(--accent);
-  box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+  /* Default: Blue (Old Color) */
+  box-shadow: none;
+  /* Default: No glow (Off) */
   border: 2px solid rgba(15, 23, 42, 1);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  z-index: 2;
 }
 
 .timeline-content {
@@ -50,6 +53,13 @@
   box-shadow: 0 14px 30px rgba(15, 23, 42, 0.75);
   transition: transform 0.15s ease, box-shadow 0.15s ease,
     border-color 0.15s ease;
+}
+
+/* Hover State: ON (Blue/Glow) when hovering the item */
+.timeline-item:hover .timeline-dot {
+  background: var(--accent);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.7);
+  transform: scale(1.1);
 }
 
 .timeline-content:hover {
@@ -79,7 +89,7 @@
   line-height: 1.5;
 }
 
-.timeline-details li + li {
+.timeline-details li+li {
   margin-top: 0.2rem;
 }
 
