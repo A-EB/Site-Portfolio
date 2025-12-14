@@ -14,7 +14,7 @@ export const projects = [
   {
     id: 'cpp-hashmap',
     title: 'C++ Concurrent HashMap',
-    period: '2023',
+    period: '2025',
     stack: ['C++', 'Threads', 'Mutex/Atomic'],
     description:
       'High-performance concurrent HashMap implementation with different synchronization strategies and benchmarking.',
