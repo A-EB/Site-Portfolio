@@ -58,11 +58,16 @@
 
 @media (max-width: 768px) {
   .section {
-    padding-inline: 1rem;
+    padding: 3.5rem 1.25rem;
+    /* Better side spacing */
   }
 
   .section.alt .section-inner {
-    padding: 1.6rem 1.2rem;
-    border-radius: 1.2rem;
+    padding: 1.5rem 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
   }
 }
