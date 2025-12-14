@@ -115,12 +115,13 @@
     width: 100%;
     order: 1;
     /* Content first */
+    margin-bottom: 1rem;
+    /* Space between content and arrows */
   }
 
   .cert-nav {
     order: 2;
     /* Arrows second */
-    margin-top: 0.5rem;
   }
 
   .cert-image {

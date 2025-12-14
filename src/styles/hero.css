@@ -81,4 +81,10 @@
   .hero-side {
     justify-content: flex-start;
   }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center buttons on mobile */
+  }
 }
