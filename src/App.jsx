@@ -7,6 +7,7 @@ import StudiesSection from './components/StudiesSection';
 import ContactSection from './components/ContactSection';
 import CertificationsSection from './components/CertificationsSection';
 import { LanguageProvider } from './i18n.jsx';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <CertificationsSection />
           <ContactSection />
         </main>
+        <Analytics />
       </div>
     </LanguageProvider>
   );
