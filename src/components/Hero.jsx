@@ -16,7 +16,7 @@ function Hero() {
           <p className="hero-subtitle">{t('hero.subtitle')}</p>
           <div className="hero-actions">
             <a
-              href={lang === 'fr' ? '/cv-fr.pdf' : '/cv-en.pdf'}
+              href={lang === 'fr' ? '/cv_fr.pdf' : '/cv_en.pdf'}
               className="btn primary"
               target="_blank"
               rel="noreferrer"
